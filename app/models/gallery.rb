@@ -3,5 +3,5 @@ class Gallery < ApplicationRecord
   has_many :pieces, through: :gallery_pieces
   has_many :gallery_pieces
 
-  validates :name, presence: true
+  #validates :name, presence: true
 end
