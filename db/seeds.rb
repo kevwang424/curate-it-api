@@ -1,7 +1,11 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+Piece.create(title:"The Pre-arranged Flight", artist_name: "Jean-Honoré Fragonard", classification: "Paintings", century: "18th century", place: nil, image_url: "http://nrs.harvard.edu/urn-3:HUAM:VRS49028_dynmc", dimension: "59.1 x 50.2 cm (23 1/4 x 19 3/4 in.) framed: 82.2 x 73 x 10.3 cm (32 3/8 x 28 3/4 x 4 1/16 in.)", notes: nil )
+
+Piece.create(title:"Untitled (boy and German shepherd)", artist_name: "Bachrach Studios", classification:"Photographs" , century: "20th century", place: nil, image_url:"http://nrs.harvard.edu/urn-3:HUAM:INV154934_dynmc", dimension: "image: 24.2 x 19.2 cm (9 1/2 x 7 9/16 in.)", notes: nil )
+
+Piece.create(title:"Actor Ichikawa Monnosuke", artist_name: "Katsukawa Shunkô", classification:"Prints", century: nil, place: nil, image_url:"http://nrs.harvard.edu/urn-3:HUAM:CARP00963_dynmc", dimension: nil, notes: nil )
+
+Piece.create(title:"Kenny as Marilyn, Boston", artist_name: "Nan Goldin", classification:"Photographs", century: "20th century", place: nil, image_url:"http://nrs.harvard.edu/urn-3:huam:DDC113375_dynmc", dimension: "47.5 x 32.5 cm (18 11/16 x 12 13/16 in.) sheet: 50.8 x 40.6 cm (20 x 16 in.)", notes: nil )
+
+Piece.create(title:"Raymond Pettibon", artist_name: "Nan Goldin", classification:"Prints", century: "20th century", place: nil, image_url:"http://nrs.harvard.edu/urn-3:HUAM:INV121690_dynmc", dimension: "sheet: 28 x 21.6 cm (11 x 8 1/2 in.)", notes: nil )
+
+Piece.create(title:"Winged Oval Cup (Erbei) Painted to Simulate Lacquer", artist_name: nil, classification:"Vessels", century: "1st-3rd century CE", place: nil, image_url:"http://nrs.harvard.edu/urn-3:HUAM:CARP08644_dynmc", dimension: "H. 4 x W. 14.2 x D. 10.1 cm (1 9/16 x 5 9/16 x 4 in.)", notes: "Bronze and lacquer ritual vessels were expensive commodities that only the privileged class could afford, but in the Han dynasty, ceramic funerary wares that simulated these luxurious vessels became a more affordable means of outfitting one’s tomb, as a finished ceramic piece required far less fuel and specialized labor than a bronze or lacquer. The earthenware ceramics on display here date to the Western Han period (when the capital was located in modern-day Xi’an, Shaanxi province) and imitated ritual vessels with painted-lacquer decoration. Fired at relatively low temperatures, earthenware vessels are not fully vitrified and are slightly porous, making them less than ideal as containers for daily use, but suitable as burial items. Few colored compounds can withstand kiln temperatures without alteration; in order to replicate the multiple bright colors and dynamic designs of painted lacquers, mineral pigments were applied to earthenware vessels after firing and are hence “cold-painted.”")
