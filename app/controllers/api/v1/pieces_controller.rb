@@ -12,6 +12,11 @@ module Api
         @piece = Piece.create(piece_params)
       end
 
+      def show
+        @piece = Piece.find(params[:id])
+        render json: @piece, serializer: PieceShowSerializer
+      end
+
       private
       def piece_params
         params.require(:piece).permit(:title, :artist_name, :classification, :century, :place, :image_url, :dimension, :notes)
