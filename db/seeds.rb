@@ -22,6 +22,9 @@ gallery_jing = Gallery.create(name: "Jing's Palace", description: "I hate friend
 
 gallery_jenny = Gallery.create(name: "Jenny's Museum", description: "Gurrllllll", user_id: jenny.id)
 
+gallery_kevin2 =  Gallery.create(name: "Kevin's 2 Gallery", description: "Sashay Away", user_id: kevin.id)
+
+
 GalleryPiece.create(gallery_id: gallery_jing.id, piece_id: piece1.id )
 GalleryPiece.create(gallery_id: gallery_jing.id, piece_id: piece2.id )
 GalleryPiece.create(gallery_id: gallery_jing.id, piece_id: piece3.id )
@@ -35,3 +38,7 @@ GalleryPiece.create(gallery_id: gallery_jenny.id, piece_id: piece3.id )
 GalleryPiece.create(gallery_id: gallery_jenny.id, piece_id: piece4.id )
 GalleryPiece.create(gallery_id: gallery_jenny.id, piece_id: piece5.id )
 GalleryPiece.create(gallery_id: gallery_jenny.id, piece_id: piece6.id )
+GalleryPiece.create(gallery_id: gallery_kevin2.id, piece_id: piece6.id )
+GalleryPiece.create(gallery_id: gallery_kevin2.id, piece_id: piece3.id )
+GalleryPiece.create(gallery_id: gallery_kevin2.id, piece_id: piece1.id )
+GalleryPiece.create(gallery_id: gallery_kevin2.id, piece_id: piece2.id )
