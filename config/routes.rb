@@ -5,7 +5,8 @@ Rails.application.routes.draw do
       resources :galleries
       resources :pieces #, only:[]
       post 'signup', to: 'users#create'
-      post 'sessions', to: 'sessions#create'
+      post 'login', to: 'sessions#create'
+      post 'logout', to: 'sessions#destroy'
     end
   end
 end
