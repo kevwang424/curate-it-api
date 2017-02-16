@@ -4,7 +4,7 @@ module Api
     class GalleriesController < ApplicationController
 
       def index
-        @galleries = current_user.galleries
+        @galleries = signed_in_user.galleries
         render json: @galleries
       end
 
