@@ -5,14 +5,15 @@ module Api
 
       def create
         @user = User.find_by(email: params[:email])
-        if user && user.authenticate(params[:password])
-          jwt = Auth.issue({user_id: user.id})
+        if @user && @user.authenticate(params[:password])
+          jwt = Auth.encrypt({user_id: @user.id})
           render json: {jwt: jwt}
+        end
       end
 
       def index
-        # @galleries = Gallery.all
-        # render json: @galleries
+        @galleries = Gallery.all
+        render json: @galleries
       end
 
     end
