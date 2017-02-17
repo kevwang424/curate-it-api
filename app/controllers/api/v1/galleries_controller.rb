@@ -10,6 +10,9 @@ module Api
 
       def create
         @gallery = Gallery.create(gallery_params)
+        signed_in_user.galleries << @gallery
+        @galleries = signed_in_user.galleries
+        render json: @galleries
       end
 
       def show
@@ -19,7 +22,7 @@ module Api
 
       private
       def gallery_params
-        params.require(:gallery).permit(:name, :description)
+        params.permit(:name, :description)
       end
 
     end
