@@ -41,6 +41,7 @@ ActiveRecord::Schema.define(version: 20170213183112) do
     t.string   "label_text"
     t.string   "commentary"
     t.string   "dated"
+    t.integer  "api_id"
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
   end
