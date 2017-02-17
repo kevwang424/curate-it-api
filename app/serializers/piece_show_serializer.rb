@@ -1,3 +1,3 @@
 class PieceShowSerializer < ActiveModel::Serializer
-  attributes :id, :title, :artist_name, :classification, :century, :place, :image_url, :dimension, :notes
+  attributes :id, :title, :artist_name, :classification, :century, :culture, :image_url, :dimensions, :label_text, :commentary, :dated
 end

@@ -5,10 +5,13 @@ class CreatePieces < ActiveRecord::Migration[5.0]
       t.string :artist_name
       t.string :classification
       t.string :century
-      t.string :place
+      t.string :culture
       t.string :image_url
-      t.string :dimension
-      t.string :notes
+      t.string :dimensions
+      t.string :label_text
+      t.string :commentary
+      t.string :dated
+
 
       t.timestamps
     end
