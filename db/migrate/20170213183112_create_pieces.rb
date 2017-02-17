@@ -11,7 +11,7 @@ class CreatePieces < ActiveRecord::Migration[5.0]
       t.string :label_text
       t.string :commentary
       t.string :dated
-
+      t.integer :api_id
 
       t.timestamps
     end
