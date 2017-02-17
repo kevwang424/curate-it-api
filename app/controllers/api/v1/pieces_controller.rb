@@ -9,7 +9,10 @@ module Api
       end
 
       def create
-        @piece = Piece.create(piece_params)
+        @piece = Piece.find_or_create_by(piece_params)
+        @gallery = Gallery.find(params[:gallery_id])
+        @gallery.pieces << @piece
+        render json: @piece
       end
 
       def show
@@ -19,7 +22,7 @@ module Api
 
       private
       def piece_params
-        params.require(:piece).permit(:title, :artist_name, :classification, :century, :place, :image_url, :dimension, :notes)
+        params.require(:piece).permit(:title, :artist_name, :classification, :century, :culture, :image_url, :dimensions, :label_text, :commentary, :dated, :api_id)
       end
 
     end
