@@ -35,10 +35,12 @@ ActiveRecord::Schema.define(version: 20170213183112) do
     t.string   "artist_name"
     t.string   "classification"
     t.string   "century"
-    t.string   "place"
+    t.string   "culture"
     t.string   "image_url"
-    t.string   "dimension"
-    t.string   "notes"
+    t.string   "dimensions"
+    t.string   "label_text"
+    t.string   "commentary"
+    t.string   "dated"
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
   end
