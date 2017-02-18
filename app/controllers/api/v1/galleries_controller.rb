@@ -11,8 +11,9 @@ module Api
       def create
         @gallery = Gallery.create(gallery_params)
         signed_in_user.galleries << @gallery
+        @serialized_gallery = GalleryShowSerializer.new(@gallery)
         @galleries = signed_in_user.galleries
-        render json: @galleries
+        render json: {galleryIndex: @galleries, gallery: @serialized_gallery}
       end
 
       def show
