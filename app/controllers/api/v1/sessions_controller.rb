@@ -8,6 +8,11 @@ module Api
         if @user && @user.authenticate(params[:password])
           jwt = Auth.encrypt({user_id: @user.id})
           render json: {jwt: jwt}
+        else
+          render json: {:errors=>
+           [{:detail=>"Incorrect e-mail or password",
+             :source=>{:pointer=>"user/err_type"}}
+           ]}, status: 404
         end
       end
 

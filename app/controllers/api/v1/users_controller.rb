@@ -8,11 +8,11 @@ module Api
         if @user.save
           jwt = Auth.encrypt({user_id: @user.id})
           render json: {jwt: jwt}
-        # else
-        #   render json: {:errors=>
-        #    [{:detail=>"incorrect email or password",
-        #      :source=>{:pointer=>"user/err_type"}}
-        #    ]}, status: 404
+        else
+          render json: {:errors=>
+           [{:detail=>"Please re-enter information",
+             :source=>{:pointer=>"user/err_type"}}
+           ]}, status: 404
         end
       end
 
