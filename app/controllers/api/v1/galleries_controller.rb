@@ -21,6 +21,12 @@ module Api
         render json: @gallery, serializer: GalleryShowSerializer
       end
 
+      def update
+        @gallery = Gallery.find(params[:id])
+        @gallery.update(gallery_params)
+        render json: @gallery, serializer: GalleryShowSerializer
+      end
+
       def destroy
         @gallery = Gallery.find(params[:id])
         signed_in_user.galleries.delete(@gallery)
