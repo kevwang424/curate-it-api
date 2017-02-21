@@ -16,6 +16,10 @@ module Api
         end
       end
 
+      def index
+        @user = signed_in_user
+        render json: @user, serializer: UserSerializer
+      end
 
       private
       def user_params
