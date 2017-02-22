@@ -2,8 +2,6 @@ default: &default
   adapter: postgresql
   encoding: unicode
   pool: 5
-  host: localhost
-
 
 development:
   <<: *default
@@ -12,3 +10,7 @@ development:
 test:
   <<: *default
   database: curate-it-api_test
+
+production:
+  <<: *default
+  database: curate-it-api_production
