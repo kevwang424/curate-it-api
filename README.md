@@ -15,7 +15,7 @@ In the Rails end:
 - [ ] run `bundle install` to download all necessary gems
 - [ ] `rake db:create` to create the database
 - [ ] `rake db:migrate` to create the tables
-- [ ] (optional) `rake db:seed` to populate with seed data
+- [ ] `rake db:seed` to populate with seed data, optional
 
 In the React-Redux end:
 - [ ] run `npm install` to download all necessary modules as per package.json
@@ -27,6 +27,6 @@ In the Reach-Redux end run `npm start` and is defaulted to localhost:8080.
 
 ## Authors
 
-* **Jing Yu** - (https://github.com/jingyufanclub)
 * **Kevin Wang** - (https://github.com/kevwang424/)
+* **Jing Yu** - (https://github.com/jingyufanclub)
 * **Jenny Lai** - (https://github.com/jenlaister)
