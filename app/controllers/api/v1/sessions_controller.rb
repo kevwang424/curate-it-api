@@ -1,3 +1,4 @@
+require "#{Rails.root}/lib/dog.rb"
 module Api
   module V1
 
