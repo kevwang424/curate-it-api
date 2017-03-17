@@ -1,4 +1,4 @@
-#It Do Curate
+# It Do Curate
 
 It Do Curate is a **React-Redux** application with a **Rails** backend that allows users to curate their own gallery. 
 
